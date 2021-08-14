@@ -1,0 +1,10 @@
+*{box-sizing:border-box;}
+
+form{
+	width:500px;
+	padding:18px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+	font-weight:bold;
+}

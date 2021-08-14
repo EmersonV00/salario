@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Introducción formularios web</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="estilos.css"/>
+	<style>
+
+	</style>
+
+</head>
+<body>
+
+<form action="procesa.php" method="post" name="datos[]">
+
+	<label for="codigo">Código</label>
+	<input type="number" name="codigo" id="codigo" placeholder="Escribe el código" required/>
+
+	<label for="nombre">Nombre del empleado</label>
+	<input type="text" name="nombre" id="nombre" placeholder="Escriba el nombre" required/>
+
+	<label for="sbase">Sueldo base</label>
+	<input type="float" name="sbase" id="sbase" placeholder="Q" required/>
+
+	<label for="comisiones" />Comisiones</label>
+	<input type="float" name="comisiones" id="comisiones" placeholder="Q" required />
+
+	<label for="descjudiciales">Descuentos judiciales</label>
+	<input type ="float" name="descjudiciales" id="descjudiciales" placeholder="-Descuentos"/>
+
+	<label for="igss">Porcentaje descuento IGSS</label>
+	<input type ="float" name="igss" id="igss" placeholder="% IGSS" required/>
+
+	<label for="isr">Porcentaje del descuento de ISR</label>
+	<input type ="float" name="isr" id="isr" placeholder="% ISR"/>
+
+	
+	<input type="submit" name="enviar" value="enviar datos"/>
+</form>
+
+</body>
+</html>
